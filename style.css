@@ -1,0 +1,161 @@
+* {
+	padding: 0;
+	margin: 0;
+	
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+}
+
+.container {
+    display: none;
+}
+
+nav {
+	width: 980px;
+	margin: 0px auto;
+	overflow: hidden;	
+}
+
+nav ul {
+	list-style: none;
+	overflow: hidden;
+}
+
+#one {
+  background: #465;
+}
+
+#two {
+  background: #469;
+}
+
+#three {
+  background: #490;
+}
+
+#four {
+  background: #450;
+}
+
+#five {
+  background: #510;
+}
+
+#six {
+  background: #250;
+}
+
+nav li a {
+	border-right: 1px solid #fff;
+	color: #fff;
+	display: block;
+	float: left;
+	font: 400 13px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 16.6%;
+
+	-webkit-transition: background 0.5s ease;
+	   -moz-transition: background 0.5s ease;
+	     -o-transition: background 0.5s ease;
+	    -ms-transition: background 0.5s ease;
+	        transition: background 0.5s ease;
+}
+
+nav li a:hover {
+	background: #222;
+    }
+
+nav li:last-child a {
+	border: none;
+    }
+
+footer {
+	width: 980px;
+	margin: 0px auto;
+	padding: 10px;
+	overflow: hidden;
+	background-color: #465;
+	height: 40px;
+}   
+
+@media only screen and (max-width : 980px),
+only screen and (max-device-width : 980px) {
+
+	nav {
+		width: 100%;
+	}
+
+	nav li a {
+		width: 33.33333%;
+		border-bottom: 1px solid #fff;
+		font: 400 11px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+	}
+
+	nav li:last-child a, nav li:nth-child(3) a {
+		border-right: none;
+	}
+}
+
+@media only screen and (max-width : 640px),
+only screen and (max-device-width : 640px) {
+
+	nav li a {
+		width: 50%;
+		font: 400 12px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+		
+	}
+	
+	nav li:nth-child(even) a {
+		border-right: none;
+	}
+	
+	nav li:nth-child(3) a {
+		border-right: 1px solid #fff;
+	}
+}
+
+@media only screen and (max-width : 480px),
+only screen and (max-device-width : 480px) {
+
+	nav li a {
+		width: 100%;
+		font: 400 12px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+	
+	nav li:nth-child(1) a, nav li:nth-child(3) a,nav li:nth-child(5) a {
+		border-right: none;
+	}
+}
+	
+@media only screen and (max-width : 310px),
+only screen and (max-device-width : 310px) {
+
+    nav ul {
+	display: none;
+    }
+	.check {
+	display: block;
+    }
+
+    .container {
+    background:#469; 
+    display: block;	
+    }
+
+    nav li a {
+		width: 100%;
+		font: 400 12px/1.4 'Cutive', Helvetica, Verdana, Arial, sans-serif;
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+	
+	nav li:nth-child(1) a, nav li:nth-child(3) a,nav li:nth-child(5) a {
+		border-right: none;
+	}
+}
